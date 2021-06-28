@@ -1,0 +1,25 @@
+{
+	"name": "human-readable-keys",
+	"version": "1.0.0",
+	"description": "Generate human-readable IDs",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"author": "Safin Singh",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc",
+		"test": "ts-node __tests__/index.test.ts",
+		"doc": "typedoc --packages . --theme minimal",
+		"prepublishOnly": "pnpm build && pnpm doc"
+	},
+	"keywords": [
+		"id",
+		"human-readable"
+	],
+	"devDependencies": {
+		"@types/node": "^15.12.5",
+		"ts-node": "^10.0.0",
+		"typedoc": "^0.21.2",
+		"typescript": "^4.3.4"
+	}
+}
